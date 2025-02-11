@@ -131,16 +131,16 @@
 
 // export default App
 
-// FBCStateEx
-import React from 'react'
-import FBCStateEx from './StateExamples/FBCStateEx'
-export default function App() {
-  return (
-    <div>
-      <FBCStateEx />
-    </div>
-  )
-}
+// // FBCStateEx
+// import React from 'react'
+// import FBCStateEx from './StateExamples/FBCStateEx'
+// export default function App() {
+//   return (
+//     <div>
+//       <FBCStateEx />
+//     </div>
+//   )
+// }
 
 // //StateEx Counter
 // import React from 'react'
@@ -155,4 +155,70 @@ export default function App() {
 
 // export default App
 
+// //function based component for styling types
+// import React from 'react'
+// import FunctionalComponent from './components/FunctionalComponent'
+// const App = () => {
+//   return (
+//     <div>
+//       <FunctionalComponent Questioning="How are you doing?"
+//       apply={true}/>
+//     </div>
+//   )
+// }
 
+// // export default App
+// // class based types of stylings
+// import React from 'react'
+// import ClassComponent from './components/ClassComponent'
+// const App = () => {
+//   return (
+//     <div>
+//       <ClassComponent />
+//     </div>
+//   )
+// }
+
+// export default App
+// //form handling/controlled component
+// import React from 'react'
+// import FormHandling from './Controlled_components/FormHandling.jsx'
+// const App = () => {
+//   return (
+//     <div>
+//       <FormHandling />
+//     </div>
+//   )
+// }
+
+// export default App
+
+// //useEffect example(app.js)
+// import React from 'react'
+// import UseEffectEx from './HookExample/UseEffectEx'
+// const App = () => {
+//   return (
+//     <div>
+//       <UseEffectEx />
+//     </div>
+//   )
+// }
+
+// export default App
+
+// // object destructuring
+// let obj = {a:1,b:2,c:3};
+// let {a,b,c} = obj;
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+import React from 'react'
+import RefExample from './HookExample/RefExample'
+export default function App() {
+  return (
+    <div>
+      <RefExample />
+    </div>
+  )
+}
