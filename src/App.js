@@ -213,12 +213,27 @@
 // console.log(b);
 // console.log(c);
 
-import React from 'react'
-import RefExample from './HookExample/RefExample'
-export default function App() {
-  return (
-    <div>
-      <RefExample />
-    </div>
-  )
-}
+
+// // App.js for RefExample
+// import React from 'react'
+// import RefExample from './HookExample/RefExample'
+// export default function App() {
+//   return (
+//     <div>
+//       <RefExample />
+//     </div>
+//   )
+// }
+// //The below is the example App.js for the audio tag using Ref
+// import React from 'react'
+// import Bahubali from './HookExample/Bahubali'
+// const App = () => {
+//   return (
+//     <div>
+//       <Bahubali />
+//     </div>
+//   )
+// }
+
+// export default App
+
