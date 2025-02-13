@@ -1,9 +1,35 @@
 import React from 'react'
-
+import { useState } from 'react'
 const Dashboard = () => {
+  const [username, setUsername] = useState("");
+  const [mail, setMail] = useState("");
+  const [password, setPassword] = useState("");
+  const [gender, setGender] = useState("");
+
   return (
-    <div>
-      DashBoard
+    <div className='Signupform'>
+      <form action="">
+      <input type="text" name='username' placeholder='Enter Username'/>
+      <br />
+      <input type="email" name='email' placeholder='Enter Email'/>
+      <br />
+      <input type="password" name='password' placeholder='Enter Password' />
+      <br />
+      <input type="radio" name='male'/>
+      <label >Male</label>
+      <input type="radio" name='female' />
+      <label >Female</label>
+      <br />
+      <textarea name="" id="address" cols={30} rows={5}></textarea>
+      <br />
+      <select name="" id="">
+        <option value="india">India</option>
+        <option value="china">China</option>
+        <option value="usa">USA</option>
+      </select>
+      <br />
+      <button type='submit'>Signup</button>
+      </form>
     </div>
   )
 }
