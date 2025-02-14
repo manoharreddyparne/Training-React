@@ -13,16 +13,16 @@ const Dashboard = () => {
       <br />
       <input type="email" name='email' placeholder='Enter Email'/>
       <br />
-      <input type="password" name='password' placeholder='Enter Password' />
+      <input type="Password" name='Password' placeholder='Enter Password' />
       <br />
-      <input type="radio" name='male'/>
       <label >Male</label>
-      <input type="radio" name='female' />
+      <input type="radio" name='male'/>
       <label >Female</label>
+      <input type="radio" name='female' />
       <br />
       <textarea name="" id="address" cols={30} rows={5}></textarea>
       <br />
-      <select name="" id="">
+      <select name="Country" id="DropDown">
         <option value="india">India</option>
         <option value="china">China</option>
         <option value="usa">USA</option>
