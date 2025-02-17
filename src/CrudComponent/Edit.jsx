@@ -1,32 +1,44 @@
 import axios from "axios";
-import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import "./create.css";
 import { toast } from "react-toastify";
 
-const Create = () => {
+const Edit = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
 
   const navigate = useNavigate();
 
+  const data = useParams();
+  // console.log(data);
+
+  // !read /populate the exisiting individual user data
+  useEffect(()=>{
+    axios.get("http://localhost:8000/users/"+data.userId)
+    .then(res=>{
+      // console.log(res);
+      setName(res.data.name);
+      setEmail(res.data.email);
+      setPhone(res.data.phone)
+    }).catch(err=>console.log(err))
+  })
+
   let handleSubmit = (e) => {
     e.preventDefault();
     let payload = { name, email, phone };
     // console.log(payload);
-    axios
-      .post("http://localhost:8000/users", payload)
-      .then((res) => {
-        // console.log("user created successfully");
-        toast.success("user created successfully")
-        navigate("/");
-      })
-      .catch((err) => toast.error("user not created"));
+    axios.put("http://localhost:8000/users/"+data.userId , payload)
+    .then(res=>{
+      toast.success("user updated successfully");
+      navigate("/");
+    }).catch(err=>toast.error("user not updated"))
+    
   };
   return (
     <div className="formBlock">
-      <h1>Create User</h1>
+      <h1>Update User</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -51,11 +63,11 @@ const Create = () => {
         />
         <br />
 
-        <input type="submit" value="Create User" />
+        <input type="submit" value="Update User" />
         <Link to="/">Back to Home page</Link>
       </form>
     </div>
   );
 };
 
-export default Create;
+export default Edit;

@@ -1,7 +1,9 @@
-.app{
-    text-align: center;
-
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
-.Navbar{
-    background-color: red;
+
+body{
+    font-family: sans-serif;
 }

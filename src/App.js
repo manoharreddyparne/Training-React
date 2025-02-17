@@ -237,3 +237,23 @@
 
 // export default App
 
+import React from 'react'
+import {BrowserRouter , Routes , Route} from "react-router-dom";
+import Home from "./CrudComponent/Home";
+import Create from "./CrudComponent/Create";
+import Edit from "./CrudComponent/Edit";
+import {ToastContainer} from "react-toastify"
+const App = () => {
+  return (
+    <BrowserRouter>
+    <ToastContainer/>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/create' element={<Create/>}/>
+      <Route path='/edit/:userId' element={<Edit/>}/>
+    </Routes>
+    </BrowserRouter>
+  )
+}
+
+export default App

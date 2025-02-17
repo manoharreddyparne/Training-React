@@ -1,22 +1,22 @@
 {
-    "users":[
-        {
-            "id":"1",
-            "name":"Manohar Reddy",
-            "email":"parnemanoharreddy19@gmail.com",
-            "phone":"7093501921"
-        },
-        {
-            "id":"2",
-            "name":"Alice",
-            "email":"alice@gmail.com",
-            "phone":"7314959492"
-        },
-        {
-            "id":"3",
-            "name":"Bobb",
-            "email":"bobb12@gmail.com",
-            "phone":"9292929292"
-        }
-    ]
+  "users": [
+    {
+      "id": "1",
+      "name": "Manohar Reddy",
+      "email": "parnemanoharreddy19@gmail.com",
+      "phone": "7093501921"
+    },
+    {
+      "id": "2",
+      "name": "Alice",
+      "email": "alice@gmail.com",
+      "phone": "7314959492"
+    },
+    {
+      "id": "3",
+      "name": "Bobb",
+      "email": "bobb12@gmail.com",
+      "phone": "9292929292"
+    }
+  ]
 }
